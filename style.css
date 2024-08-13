@@ -36,54 +36,45 @@ body {
   background-color: rgba(39, 22, 22, 0.751);
   z-index: -1;
 }
-
-.header-nav {
-  display: flex;
-  height: auto;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  padding: 10px;
-  font-size: 20px;
+.navbar-brand{
   color: var(--White);
-  z-index: 1;
+  font-size: 30px;
+
+}
+
+.nav-link{
+  color: var(--White);
+  display: flex;
+  align-items: center;
+}
+.nav-icons{
+padding: 10px;
+}
+.nav-icons img{
+  transition: 0.2s ease-out;
+}
+.nav-icons img:hover{
+  transform: scale(1.1);
   
 }
-.header-nav li{
-  cursor: pointer;
-  transition: 0.3s ease-out;
-}
-.header-nav li:hover{
-  transform: scale(1.1);
-}
-.header-nav a:hover {
-  color: var(--BrownCoffee);
-
-}
-.header-nav a {
-  text-decoration: none;
-  color: var(--White);
- 
-}
-
 .header-intro {
   height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
+  padding-top: 24px;
 
 }
 .header-intro h1 {
   text-align: center;
-  margin-top: 16px;
   color: var(--White);
   font-size: 40px;
+  padding-bottom: 16px;
 }
 .header-intro p {
   text-align: center;
-
   color: var(--White);
+ 
 }
   
 .icons-img img{
@@ -97,7 +88,7 @@ body {
 /* Caixa que contém todas as caixas menores e a caixa do título*/
 .main-menu {
   width: 100%;
-  height: 100px;
+  height: 160px;
   display: flex;
   justify-content: center;
   padding: 30px;
